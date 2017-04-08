@@ -1,5 +1,7 @@
 # stock-REST-Django
-Stock Market app using django REST Framework
+REST framework helps in maintaining uniform interoperability between two applications or system regardless of the architecture they are built on.
+The project demonstrate a Stock Market app using django REST Framework, which can retrieve data using GET request as well as update data at server side using POST request.
+
 
 # Running the server :
 Use python manage.py runserver
