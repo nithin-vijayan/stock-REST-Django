@@ -1,16 +1,26 @@
 from django.shortcuts import render,get_object_or_404
-from rest_framework.views import APIView
+from rest_framework.generics import ListAPIView,RetrieveAPIView,RetrieveUpdateAPIView,RetrieveDestroyAPIView,CreateAPIView
 from rest_framework.response import Response
 from rest_framework import status
 from models import Stock
 from serializers import StockSerializer
 
-class StockList(APIView):
+class StockListCreate(CreateAPIView):
+    serializer_class = StockSerializer
+    queryset = Stock.objects.all()
 
-    def get(self,request):
-        stocks = Stock.objects.all()
-        serializer = StockSerializer(stocks, many=True)
-        return Response(serializer.data)
+class StockList(ListAPIView):
+    serializer_class = StockSerializer
+    queryset = Stock.objects.all()
 
-    def post(self):
-        pass
+class StockRetrieve(RetrieveAPIView):
+    serializer_class = StockSerializer
+    queryset = Stock.objects.all()
+
+class StockRetrieveUpdate(RetrieveUpdateAPIView):
+    serializer_class = StockSerializer
+    queryset = Stock.objects.all()
+
+class StockRetrieveDelete(RetrieveDestroyAPIView):
+    serializer_class = StockSerializer
+    queryset = Stock.objects.all()
