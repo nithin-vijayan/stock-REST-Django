@@ -7,7 +7,8 @@ The project demonstrate a Stock Market app using django REST Framework, which ca
 Use python manage.py runserver
 
 
-# For Adding a Stock to database navigate to /stocks/create/
+
+## For Adding a Stock to database navigate to /stocks/create/
 
 ![Alt text](/readme_images/create_url.jpg?raw=true "Url for adding stock to Database")
 
@@ -42,20 +43,23 @@ Use python manage.py runserver
 
 # For updating a particular stock in database navigate to /stocks/<stock_id>/edit/
 
-![Alt text](/readme_images/update.jpg?raw=true "Updating a single stock")
+![Alt text](/readme_images/update_url.jpg?raw=true "Updating a single stock")
 
 # Fill in stock details on browsable API for Updating stock
 
-![Alt text](/readme_images/update_url.jpg?raw=true "Stock Update Url")
+![Alt text](/readme_images/update.jpg?raw=true "Stock Update Url")
+
+
 
 
 # For Deleting a particular stock based on id in database navigate to /stocks/<stock_id>/delete/
 
-![Alt text](/readme_images/delete.jpg?raw=true "Delete a single Stock")
+![Alt text](/readme_images/delete_url.jpg?raw=true "Stock Delete Url")
 
 # Confirm delete on browsable api for deleting the stock
 
-![Alt text](/readme_images/delete_url.jpg?raw=true "Stock Delete Url")
+![Alt text](/readme_images/delete.jpg?raw=true "Delete a single Stock")
+
 
 
 # At any time, to get response in json plain text, suffix the url with '.json'
